@@ -1,0 +1,132 @@
+/* *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+} */
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+
+#main{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+section{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+}
+
+#vcmessage{
+  margin-top: 30px;
+  padding: 10px;
+  font-size: large;
+}
+
+.hidden{
+    display:none;
+}
+
+.course-button{
+    display:block;
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    background:#f8f8f8;
+    font-size:18px;
+    text-align:left;
+    border-radius:5px;
+}
+
+.course-card{
+    border:1px solid #ddd;
+    padding:20px;
+    margin-top:15px;
+    border-radius:6px;
+}
+
+.course-card p{
+    margin:8px 0;
+}
+
+#backToCourses{
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+.student-card{
+    border:1px solid #ddd;
+    padding:15px;
+    margin:10px 0;
+    border-radius:6px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:15px;
+}
+
+input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+form button{
+    background:#222;
+    color:white;
+}
+
+#studentMessage{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+#facilitiesList{
+    margin-left:20px;
+}
+
+#placementInfo ul{
+    margin-left:20px;
+}

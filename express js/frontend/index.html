@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBLU University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to CBLU</h1>
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Students</a>
+        <a href="#">Contact</a>
+        <a href="#">Facilities</a>
+        <a href="#">Placement</a>
+    </nav>
+</header>
+<div id="main">
+    <section id="about">
+        <h2>About College</h2>
+        <div id="aboutInfo"></div>
+
+<pre id ="vcmessage">
+VICE CHANCELLOR’S MESSAGE
+
+CBLU,Bhiwani was established by the government of Haryana in 2014 to expand the access of people to 
+quality education and ensure equity.It is a fast growing institute making all endeavours to grow as 
+a centre for knowledge creation and dissemination with a thrust on sports and physical education,
+skill development and, extension and co-curricular activities activities to contribute meaningfully 
+to building Atmnirbhar Bharat. 
+
+Indigenous research agenda,students’ welfare, balancing quantitative and qualitative academic growth, 
+promoting diversity,developing new and updating educational programmes, and intruding industry interface 
+have been identified as priority areas to work on.Conducive teaching-learning environment, new academic 
+programmes, sports achievements and quality research output make this university a good choice for the 
+students.</pre>
+    </section>
+
+    <section id="courses" class="hidden">
+        <h2>Courses</h2>
+        <div id="coursesList"></div>
+    </section>
+
+    <section id="students" class="hidden">
+        <h2>Students</h2>
+        <div id="studentInfo"></div>
+
+        <h3>Register New Student</h3>
+
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="text" id="batch" placeholder="Batch" required>
+
+            <button type="submit">Register Student</button>
+        </form>
+
+        <p id="studentMessage"></p>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <div id="contactInfo"></div>
+    </section>
+
+    <section id="facilities" class="hidden">
+        <h2>Facilities</h2>
+        <ul id="facilitiesList"></ul>
+    </section>
+
+    <section id="placement" class="hidden">
+        <h2>Placement</h2>
+        <div id="placementInfo"></div>
+    </section>
+
+  </div>
+  
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "placementCell": "CBLU Placement Cell",
+  "averagePackage": "5.5 LPA",
+  "highestPackage": "12 LPA",
+  "companiesVisited": 35,
+  "placementRate": "85%",
+  "companies": [
+    "TCS",
+    "Infosys",
+    "Wipro",
+    "Accenture",
+    "Cognizant"
+  ]
+}

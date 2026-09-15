@@ -1,0 +1,26 @@
+[
+  {
+    "name": "BCA",
+    "fullName": "Bachelor of Computer Applications",
+    "duration": "3 Years",
+    "seats": 60,
+    "eligibility": "10+2 with minimum 55%",
+    "fees": 45000
+  },
+  {
+    "name": "BTech",
+    "fullName": "Bachelor of Technology in Computer Science and Engineering",
+    "duration": "4 Years",
+    "seats": 120,
+    "eligibility": "10+2 with Physics and Mathematics",
+    "fees": 75000
+  },
+  {
+    "name": "BBA",
+    "fullName": "Bachelor of Business Administration",
+    "duration": "3 Years",
+    "seats": 60,
+    "eligibility": "10+2 in any stream",
+    "fees": 50000
+  }
+]
