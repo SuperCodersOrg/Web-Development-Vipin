@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Search</title>
+</head>
+<body>
+
+    <input type="text" id="searchInput" placeholder="Search product">
+
+    <select id="category">
+        <option value="">Select Category</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+    </select>
+
+    <button id="searchButton">Search</button>
+
+    <div id="result"></div>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const category = document.getElementById("category");
+        const searchButton = document.getElementById("searchButton");
+        const result = document.getElementById("result");
+
+        searchButton.addEventListener("click",()=>{
+            const searchValue = searchInput.value.toLowerCase();
+            const Category = category.value;
+
+            const query = new URLSearchParams();
+
+            if(searchValue){
+                query.set("searchValue",searchValue);
+            }
+
+            if(Category){
+                query.set("category",Category);
+            }
+
+            fetch(`http://localhost:3200/products?${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    data.forEach(product => {
+                        result.innerHTML += `
+                            <div>
+                                <p>Product: ${product.name}</p>
+                                <p>Category: ${product.category}</p>
+                            </div>
+                        `;
+                    });
+                });
+        });
+    </script>
+
+</body>
+</html>

@@ -68,7 +68,7 @@ function loadCourseDetails(courseName){
         .then(response => response.json())
         .then(course =>{
             coursesList.innerHTML = `
-                <button id="backToCourses">← Back to Courses</button>
+                <button id="backToCourses">Back to Courses</button>
                 <div class="course-card">
                     <h3>${course.name}</h3>
                     <p><strong>Full Name:</strong> ${course.fullName}</p>
